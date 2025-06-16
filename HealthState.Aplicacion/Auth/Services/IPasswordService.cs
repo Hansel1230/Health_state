@@ -1,4 +1,4 @@
-﻿namespace HealthState.Application.Auth.Services
+﻿namespace HealthState.Aplicacion.Auth.Services
 {
     public interface IPasswordService
     {

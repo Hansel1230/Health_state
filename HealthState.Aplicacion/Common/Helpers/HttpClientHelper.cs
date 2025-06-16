@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace HealthState.Application.Common.Helpers
+namespace HealthState.Aplicacion.Common.Helpers
 {
     public static class HttpClientHelper
     {

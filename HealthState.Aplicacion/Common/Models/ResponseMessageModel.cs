@@ -1,4 +1,4 @@
-﻿namespace HealthState.Application.Common.Models
+﻿namespace HealthState.Aplicacion.Common.Models
 {
     public class ResponseMessageModel<T>
     {

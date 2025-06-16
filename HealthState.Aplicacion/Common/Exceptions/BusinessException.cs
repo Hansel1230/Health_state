@@ -1,4 +1,4 @@
-﻿namespace HealthState.Application.Common.Exceptions
+﻿namespace HealthState.Aplicacion.Common.Exceptions
 {
     public class BusinessException : Exception
     {

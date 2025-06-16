@@ -1,14 +1,14 @@
 ﻿using FluentValidation;
-using HealthState.Application.Auth.Configurations;
-using HealthState.Application.Auth.Services;
-using HealthState.Application.Common.Behaviors;
-using HealthState.Application.Common.Configurations;
+using HealthState.Aplicacion.Auth.Configurations;
+using HealthState.Aplicacion.Auth.Services;
+using HealthState.Aplicacion.Common.Behaviors;
+using HealthState.Aplicacion.Common.Configurations;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
-namespace HealthState.Application
+namespace HealthState.Aplicacion
 {
     public static class ApplicationBuilderExtension
     {

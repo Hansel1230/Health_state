@@ -531,11 +531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj",
-      "projectName": "HealthState.Application",
-      "projectPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj",
+      "projectUniqueName": "C:\\Users\\jarol\\source\\repos\\Health_state\\HealthState.Aplicacion\\HealthState.Aplicacion.csproj",
+      "projectName": "HealthState.Aplicacion",
+      "projectPath": "C:\\Users\\jarol\\source\\repos\\Health_state\\HealthState.Aplicacion\\HealthState.Aplicacion.csproj",
       "packagesPath": "C:\\Users\\jarol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\obj\\",
+      "outputPath": "C:\\Users\\jarol\\source\\repos\\Health_state\\HealthState.Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

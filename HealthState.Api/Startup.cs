@@ -1,8 +1,8 @@
-using HealthState.Application;
+using HealthState.Aplicacion;
 using HealthState.Infraestructura;
-using HealthState.Application.Auth.Services;
-using HealthState.Application.Common.Exceptions;
-using HealthState.Application.Common.Models;
+using HealthState.Aplicacion.Auth.Services;
+using HealthState.Aplicacion.Common.Exceptions;
+using HealthState.Aplicacion.Common.Models;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.OpenApi.Models;
 using Serilog;

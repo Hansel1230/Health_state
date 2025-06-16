@@ -1,6 +1,6 @@
-﻿using HealthState.Application.Auth.Models;
+﻿using HealthState.Aplicacion.Auth.Models;
 
-namespace HealthState.Application.Auth.Services
+namespace HealthState.Aplicacion.Auth.Services
 {
     public interface IAuthHttpService
     {

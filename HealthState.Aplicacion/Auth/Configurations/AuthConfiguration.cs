@@ -1,4 +1,4 @@
-﻿namespace HealthState.Application.Auth.Configurations
+﻿namespace HealthState.Aplicacion.Auth.Configurations
 {
     public class AuthConfiguration
     {

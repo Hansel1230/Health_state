@@ -1,7 +1,7 @@
-﻿using HealthState.Application.Auth.Models;
+﻿using HealthState.Aplicacion.Auth.Models;
 using MediatR;
 
-namespace HealthState.Application.Auth.Commands
+namespace HealthState.Aplicacion.Auth.Commands
 {
     public class LoginCommand : IRequest<AuthApiUserModel>
     {

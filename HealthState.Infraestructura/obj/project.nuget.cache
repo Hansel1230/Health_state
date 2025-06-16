@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2QwEcW5Llpg=",
+  "dgSpecHash": "XZrXWb7HepY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj",
+  "projectFilePath": "C:\\Users\\jarol\\source\\repos\\Health_state\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarol\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\jarol\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

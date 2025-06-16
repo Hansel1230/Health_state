@@ -1,4 +1,4 @@
-﻿using HealthState.Application.Auth.Services;
+﻿using HealthState.Aplicacion.Auth.Services;
 using Microsoft.AspNetCore.Identity;
 
 namespace HealthState.Infraestructura.Services

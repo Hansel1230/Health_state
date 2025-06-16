@@ -1,4 +1,4 @@
-﻿namespace HealthState.Application.Common.Configurations
+﻿namespace HealthState.Aplicacion.Common.Configurations
 {
     public class JwtConfiguration
     {

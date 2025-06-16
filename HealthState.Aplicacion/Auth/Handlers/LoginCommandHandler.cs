@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using HealthState.Application.Auth.Commands;
-using HealthState.Application.Auth.Models;
-using HealthState.Application.Auth.Services;
-using HealthState.Application.Common.Exceptions;
+using HealthState.Aplicacion.Auth.Commands;
+using HealthState.Aplicacion.Auth.Models;
+using HealthState.Aplicacion.Auth.Services;
+using HealthState.Aplicacion.Common.Exceptions;
 using MediatR;
 using Service.Application.Auth.Resources;
 
-namespace HealthState.Application.Auth.Handlers
+namespace HealthState.Aplicacion.Auth.Handlers
 {
     public class LoginCommandHandler : IRequestHandler<LoginCommand, AuthApiUserModel>
     {

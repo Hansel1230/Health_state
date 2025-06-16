@@ -9,13 +9,13 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "HealthState.Application.Auth.Commands.LoginCommand",
+        "Type": "HealthState.Aplicacion.Auth.Commands.LoginCommand",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "HealthState.Application.Auth.Models.LoginResponseModel",
+        "Type": "HealthState.Aplicacion.Auth.Models.LoginResponseModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -35,7 +35,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "HealthState.Application.Auth.Models.LoginResponseModel",
+        "Type": "HealthState.Aplicacion.Auth.Models.LoginResponseModel",
         "MediaTypes": [
           "text/plain",
           "application/json",

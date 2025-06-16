@@ -1,4 +1,4 @@
-﻿using HealthState.Application.Auth.Services;
+﻿using HealthState.Aplicacion.Auth.Services;
 using HealthState.Infraestructura.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

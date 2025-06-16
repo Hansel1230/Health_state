@@ -1,4 +1,4 @@
-﻿namespace HealthState.Application.Auth.Models
+﻿namespace HealthState.Aplicacion.Auth.Models
 {
     public class AuthApiLoginModel
     {

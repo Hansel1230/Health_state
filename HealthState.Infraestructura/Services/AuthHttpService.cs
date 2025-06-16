@@ -1,10 +1,10 @@
-﻿using HealthState.Application.Auth.Configurations;
-using HealthState.Application.Auth.Models;
-using HealthState.Application.Auth.Services;
-using HealthState.Application.Common.Exceptions;
+﻿using HealthState.Aplicacion.Auth.Configurations;
+using HealthState.Aplicacion.Auth.Models;
+using HealthState.Aplicacion.Auth.Services;
+using HealthState.Aplicacion.Common.Exceptions;
 using Microsoft.Extensions.Options;
 using Service.Application.Auth.Resources;
-using HealthState.Application.Common.Helpers;
+using HealthState.Aplicacion.Common.Helpers;
 
 namespace HealthState.Infraestructura.Services
 {

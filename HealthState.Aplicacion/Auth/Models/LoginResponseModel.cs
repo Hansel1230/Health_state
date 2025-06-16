@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HealthState.Application.Auth.Models
+namespace HealthState.Aplicacion.Auth.Models
 {
     public class LoginResponseModel
     {

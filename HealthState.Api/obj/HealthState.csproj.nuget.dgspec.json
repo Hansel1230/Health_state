@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState\\HealthState.csproj": {}
+    "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState\\HealthState.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj": {
+    "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj",
+        "projectUniqueName": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj",
         "projectName": "HealthState.Infraestructura",
-        "projectPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj",
+        "projectPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj",
         "packagesPath": "C:\\Users\\jarol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState.Infraestructura\\obj\\",
+        "outputPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState.Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj": {
-                "projectPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj"
+              "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthStateApplication\\HealthState.Application.csproj": {
+                "projectPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthStateApplication\\HealthState.Application.csproj"
               }
             }
           }
@@ -106,14 +106,14 @@
         }
       }
     },
-    "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj": {
+    "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthStateApplication\\HealthState.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj",
+        "projectUniqueName": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthStateApplication\\HealthState.Application.csproj",
         "projectName": "HealthState.Application",
-        "projectPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj",
+        "projectPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthStateApplication\\HealthState.Application.csproj",
         "packagesPath": "C:\\Users\\jarol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\obj\\",
+        "outputPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthStateApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -194,14 +194,14 @@
         }
       }
     },
-    "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState\\HealthState.csproj": {
+    "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState\\HealthState.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState\\HealthState.csproj",
+        "projectUniqueName": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState\\HealthState.csproj",
         "projectName": "HealthState",
-        "projectPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState\\HealthState.csproj",
+        "projectPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState\\HealthState.csproj",
         "packagesPath": "C:\\Users\\jarol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState\\obj\\",
+        "outputPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -223,11 +223,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj": {
-                "projectPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj"
+              "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthState.Infraestructura\\HealthState.Infraestructura.csproj"
               },
-              "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj": {
-                "projectPath": "C:\\Users\\jarol\\Source\\Repos\\Health_state\\HealthStateApplication\\HealthState.Application.csproj"
+              "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthStateApplication\\HealthState.Application.csproj": {
+                "projectPath": "C:\\Users\\jarol\\source\\repos\\HealthState\\HealthStateApplication\\HealthState.Application.csproj"
               }
             }
           }
