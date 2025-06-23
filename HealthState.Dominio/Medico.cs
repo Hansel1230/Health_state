@@ -17,5 +17,7 @@ public partial class Medico
 
     public string? Email { get; set; }
 
+    public string? Cedula { get; set; }
+
     public virtual ICollection<Cita> Cita { get; set; } = new List<Cita>();
 }

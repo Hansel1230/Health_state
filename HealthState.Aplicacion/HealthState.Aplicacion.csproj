@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Paciente\Commands\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\HealthState.Dominio\HealthState.Dominio.csproj" />
   </ItemGroup>
 

@@ -3,7 +3,7 @@ using HealthState.Infraestructura.Data;
 
 namespace HealthState.Infraestructura.Repository
 {
-    public class UnitOfWork(HealthStateDbContext context) : IUnitOfWork
+    public class UnitOfWork(HealthStateContext context) : IUnitOfWork
     {
         private readonly Dictionary<Type, object> repositories = [];
 

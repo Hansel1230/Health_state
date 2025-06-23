@@ -958,6 +958,9 @@
         }
       },
       "HealthState.Dominio/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
+        },
         "runtime": {
           "HealthState.Dominio.dll": {
             "assemblyVersion": "1.0.0.0",

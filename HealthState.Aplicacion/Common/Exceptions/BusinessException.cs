@@ -1,7 +1,12 @@
-﻿namespace HealthState.Aplicacion.Common.Exceptions
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace HealthState.Aplicacion.Common.Exceptions
 {
+    [ExcludeFromCodeCoverage]
     public class BusinessException : Exception
     {
-        public BusinessException(string msg) : base(msg) { }
+        public BusinessException(string message) : base(message) { }
+
+        public static BusinessException Instance(string message) => new BusinessException(message);
     }
 }

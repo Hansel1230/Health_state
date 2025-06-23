@@ -7,13 +7,9 @@ public partial class Usuario
 {
     public int UsuarioId { get; set; }
 
-    public string? Nombre { get; set; }
+    public string Usuario1 { get; set; } = null!;
 
-    public byte[] Contrasena { get; set; } = null!;
-
-    public byte[] Salt { get; set; } = null!;
-
-    public string? Email { get; set; }
+    public string Contrasena { get; set; } = null!;
 
     public int? RolId { get; set; }
 

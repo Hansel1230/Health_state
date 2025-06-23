@@ -9,10 +9,10 @@ namespace HealthState.Infraestructura.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        protected readonly HealthStateDbContext context;
+        protected readonly HealthStateContext context;
         protected readonly DbSet<T> dbSet;
 
-        public Repository(HealthStateDbContext context)
+        public Repository(HealthStateContext context)
         {
             this.context = context;
             dbSet = context.Set<T>();

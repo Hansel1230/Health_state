@@ -17,7 +17,7 @@ namespace HealthState.Infraestructura
             services.AddScoped<IPasswordService, PasswordService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-            services.AddDbContext<HealthStateDbContext>(options =>
+            services.AddDbContext<HealthStateContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("HealthState"));
             });

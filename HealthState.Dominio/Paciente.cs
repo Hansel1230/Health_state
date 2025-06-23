@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HealthState.Dominio.Enum;
+using System;
 using System.Collections.Generic;
 
 namespace HealthState.Dominio;
@@ -11,7 +12,7 @@ public partial class Paciente
 
     public DateOnly? FechaNacimiento { get; set; }
 
-    public string? Sexo { get; set; }
+    public SexoEnum Sexo { get; set; }
 
     public string? Direccion { get; set; }
 
@@ -23,11 +24,13 @@ public partial class Paciente
 
     public int? AseguradoraId { get; set; }
 
-    public virtual Aseguradora? Aseguradora { get; set; }
+    public string? Cedula { get; set; }
 
-    public virtual ICollection<Cita> Cita { get; set; } = new List<Cita>();
+    public Aseguradora? Aseguradora { get; set; }
 
-    public virtual ICollection<Factura> Facturas { get; set; } = new List<Factura>();
+    public ICollection<Cita> Cita { get; set; } = new List<Cita>();
 
-    public virtual ICollection<Solicitude> Solicitudes { get; set; } = new List<Solicitude>();
+    public ICollection<Factura> Facturas { get; set; } = new List<Factura>();
+
+    public ICollection<Solicitude> Solicitudes { get; set; } = new List<Solicitude>();
 }
