@@ -4,7 +4,8 @@ using HealthState.Aplicacion.Auth.Models;
 using HealthState.Aplicacion.Auth.Services;
 using HealthState.Aplicacion.Common.Exceptions;
 using MediatR;
-using Service.Application.Auth.Resources;
+using HealthState.Aplicacion.Auth;
+using HealthState.Aplicacion.Auth.Resources;
 
 namespace HealthState.Aplicacion.Auth.Handlers
 {

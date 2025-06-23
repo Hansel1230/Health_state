@@ -3,7 +3,7 @@ using HealthState.Aplicacion.Auth.Models;
 using HealthState.Aplicacion.Auth.Services;
 using HealthState.Aplicacion.Common.Exceptions;
 using Microsoft.Extensions.Options;
-using Service.Application.Auth.Resources;
+using HealthState.Aplicacion.Auth.Resources;
 using HealthState.Aplicacion.Common.Helpers;
 
 namespace HealthState.Infraestructura.Services
