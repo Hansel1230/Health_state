@@ -1,19 +1,233 @@
-# Archivos y carpetas de Visual Studio
+# Visual Studio
 .vs/
+*.com
+*.class
+*.db
+*.suo
+*.user
+*.config
+*.log
+*.bak
+*.cache
+*.designer.cs
+*.resx.designer.cs
+*.pdb
+*.suo
+*.user
+*.log
+*.bak
+*.cache
+*.Designer.cs
+*.resx.Designer.cs
+*.pdb
+*.suo
+*.user
+*.log
+*.bak
+*.cache
+*.Designer.cs
+*.resx.Designer.cs
+*.pdb
+*.suo
+*.user
+*.log
+*.bak
+*.cache
+*.Designer.cs
+*.resx.Designer.cs
+*.pdb
+*.suo
+*.user
+*.log
+*.bak
+*.cache
+*.Designer.cs
+*.resx.Designer.cs
+*.pdb
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Tt]emp/
+[Tt]estResults/
+*.out
+*.err
+*.ipch
+*.aps
+*.ncb
+*.opendb
+*.res
+*.sbr
+*.tlb
+*.tlh
+*.tmp
+*.vspscc
+*.vssscc
+*.build-info
+*.safetypolicy
+_UpgradeReport_Files/
+.vspscc
+.vssscc
+build.log
+*.orig
+[Ss]ourceLink.json # Your image shows this
+[Gg]enerateResource.cache # Your image shows this
+
+# Packages
+*.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Rider
+.idea/
+
+# Dotnet tool directories
+.config/
+.tools/
+
+# User-specific files
+*.user
+*.bak
+*.booproj
+*.webinfo
+*.pubxml
+*.pfx
+
+# Intellisense, etc.
+*.opendb
+*.VC.db
+*.sdf
+*.idb
+*.opt
+*.dbmd
+*.tlog
+*.psess
+*.vsp
+*.coverage
+*.coveragexml
+*.loadtest
+*.trx
+*.vsdps
+*.mfclog
+*.lastbuildstate
+
+# Resharper/dotCover/dotPeek/etc.
+*.resharper
+*.dotSettings
+*.dotCover
+
+# Local settings
+LocalSettings.xml
+
+# Code analysis results
+*.CodeAnalysisLog.xml
+
+# VS Code specific files
+.vscode/
+
+# Other common files
+*.swp
+*.bak
+*.log
+*.tmp
+*.scc
+*.vs/
+*.sln.docstates
+*.vshost.*
+*.user*
+*.ncrunch*
+*.TestSettings
+*.vsts
+*.webtest
+*.suo
+*.user
+*.log
+*.bak
+*.cache
+*.designer.cs
+*.resx.designer.cs
+*.pdb
+
+# Output from tooling
+dist/
+node_modules/
+
+# Mac OS
+.DS_Store
+
+# Misc
+*.pid
+*.pids
+*.seed
+*.log
+*.lo
+*.aux
+*.out
+*.dvi
+*.log.*
+*.stackdump
+*_i.c
+*_p.c
+*.ncb
+*.lib
+*.obj
+*.exp
+*.ilk
+*.aps
+*.pch
+*.ipch
+*.tlb
+*.tlh
+*.tmp
+*.err
+*.vspscc
+*.vssscc
+*.scc
+*.bak
+*.suo
+*.user
+*.docstates
+*.csproj.user
+*.vcxproj.user
+*.njsproj.user
+*.sln.docstates
+*.vshost.*
+*.vsp
+*.coverage
+*.coveragexml
+*.loadtest
+*.trx
+*.testrunconfig
+*.dotSettings
+*.resharper
+*.bak
+*.log
+*.tmp
+*.vs/
 *.user
 *.suo
-*.userosscache
-*.sln.docstates
-
-# Carpetas de compilación
-bin/
-obj/
-
-# Archivos de configuración local
-*.dbmdl
+*.userprefs
+*.DS_Store
+*.orig
+*.swp
+*.bak
 *.log
-*.cache
-*.csproj.user
+*.tmp
+*.vs/
+*.user
+*.suo
+*.userprefs
+*.DS_Store
 
-# Archivos de VS Code
-.vscode/
+# Generated files shown in your image:
+**/obj/
+**/bin/
+**/refint/ # Specific to your project for inter-project references
+*.SourceLink.json
+*.GenerateResource.cache
+
+# Ensure the .vs folder is ignored recursively
+.vs/
