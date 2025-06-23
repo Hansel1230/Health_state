@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HealthState.Aplicacion\HealthState.Aplicacion.csproj" />
+    <ProjectReference Include="..\HealthState.Dominio\HealthState.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

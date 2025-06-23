@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using HealthState.Dominio;
 using Microsoft.EntityFrameworkCore;
 
 namespace HealthState.Infraestructura.Data;
@@ -16,27 +17,16 @@ public partial class HealthStateDbContext : DbContext
     }
 
     public virtual DbSet<Aseguradora> Aseguradoras { get; set; }
-
     public virtual DbSet<Cita> Citas { get; set; }
-
     public virtual DbSet<DetalleFactura> DetalleFacturas { get; set; }
-
     public virtual DbSet<Estado> Estados { get; set; }
-
     public virtual DbSet<Factura> Facturas { get; set; }
-
     public virtual DbSet<Medico> Medicos { get; set; }
-
     public virtual DbSet<Paciente> Pacientes { get; set; }
-
     public virtual DbSet<Role> Roles { get; set; }
-
     public virtual DbSet<Solicitude> Solicitudes { get; set; }
-
     public virtual DbSet<TipoSolicitude> TipoSolicitudes { get; set; }
-
     public virtual DbSet<Tratamiento> Tratamientos { get; set; }
-
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

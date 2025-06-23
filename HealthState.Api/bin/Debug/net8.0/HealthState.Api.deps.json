@@ -945,6 +945,7 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "FluentValidation.DependencyInjectionExtensions": "12.0.0",
+          "HealthState.Dominio": "1.0.0",
           "MediatR": "12.5.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.6"
@@ -956,9 +957,18 @@
           }
         }
       },
+      "HealthState.Dominio/1.0.0": {
+        "runtime": {
+          "HealthState.Dominio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "HealthState.Infraestructura/1.0.0": {
         "dependencies": {
           "HealthState.Aplicacion": "1.0.0",
+          "HealthState.Dominio": "1.0.0",
           "Microsoft.AspNetCore.SignalR.Client": "8.0.0",
           "Microsoft.AspNetCore.SignalR.Client.Core": "8.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
@@ -1626,6 +1636,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "HealthState.Aplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HealthState.Dominio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

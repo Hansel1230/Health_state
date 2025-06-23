@@ -1,9 +1,117 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jarol\\source\\repos\\Health_state\\",
+  "WorkspaceRootPath": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|c:\\users\\jarol\\source\\repos\\health_state\\healthstate.infraestructura\\services\\authhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{78714ECF-2FC3-C3F3-9243-424CD66E92B1}|HealthState.Api\\HealthState.Api.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78714ECF-2FC3-C3F3-9243-424CD66E92B1}|HealthState.Api\\HealthState.Api.csproj|solutionrelative:healthstate.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78714ECF-2FC3-C3F3-9243-424CD66E92B1}|HealthState.Api\\HealthState.Api.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78714ECF-2FC3-C3F3-9243-424CD66E92B1}|HealthState.Api\\HealthState.Api.csproj|solutionrelative:healthstate.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78714ECF-2FC3-C3F3-9243-424CD66E92B1}|HealthState.Api\\HealthState.Api.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78714ECF-2FC3-C3F3-9243-424CD66E92B1}|HealthState.Api\\HealthState.Api.csproj|solutionrelative:healthstate.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.infraestructura\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|solutionrelative:healthstate.infraestructura\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.infraestructura\\data\\healthstatedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|solutionrelative:healthstate.infraestructura\\data\\healthstatedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78714ECF-2FC3-C3F3-9243-424CD66E92B1}|HealthState.Api\\HealthState.Api.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.api\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78714ECF-2FC3-C3F3-9243-424CD66E92B1}|HealthState.Api\\HealthState.Api.csproj|solutionrelative:healthstate.api\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.aplicacion\\paciente\\handlers\\pacientegetallqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|solutionrelative:healthstate.aplicacion\\paciente\\handlers\\pacientegetallqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.infraestructura\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|solutionrelative:healthstate.infraestructura\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.aplicacion\\common\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|solutionrelative:healthstate.aplicacion\\common\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\medico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\tratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\tratamiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\tiposolicitude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\tiposolicitude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\solicitude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\solicitude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\detallefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\aseguradora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\aseguradora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.aplicacion\\paciente\\queries\\pacientegetallquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|solutionrelative:healthstate.aplicacion\\paciente\\queries\\pacientegetallquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.aplicacion\\paciente\\models\\pacientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|solutionrelative:healthstate.aplicacion\\paciente\\models\\pacientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.infraestructura\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|solutionrelative:healthstate.infraestructura\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.dominio\\types\\isoftdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4290B2B2-8526-4FB0-8141-4BC8445D1B2F}|HealthState.Dominio\\HealthState.Dominio.csproj|solutionrelative:healthstate.dominio\\types\\isoftdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.aplicacion\\common\\utils\\predicatebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|solutionrelative:healthstate.aplicacion\\common\\utils\\predicatebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.aplicacion\\common\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2429DC30-0D0A-6CEE-1179-2CC260A861FF}|HealthState.Aplicacion\\HealthState.Aplicacion.csproj|solutionrelative:healthstate.aplicacion\\common\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|c:\\users\\jarol\\desktop\\unicda\\ingenieriaserviciosweb\\proyectoweb8\\healthstate.infraestructura\\services\\authhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0ED8E660-E714-4318-A12E-AA1E70493A26}|HealthState.Infraestructura\\HealthState.Infraestructura.csproj|solutionrelative:healthstate.infraestructura\\services\\authhttpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +127,347 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthHttpService.cs",
-              "DocumentMoniker": "C:\\Users\\jarol\\source\\repos\\Health_state\\HealthState.Infraestructura\\Services\\AuthHttpService.cs",
-              "RelativeDocumentMoniker": "HealthState.Infraestructura\\Services\\AuthHttpService.cs",
-              "ToolTip": "C:\\Users\\jarol\\source\\repos\\Health_state\\HealthState.Infraestructura\\Services\\AuthHttpService.cs",
-              "RelativeToolTip": "HealthState.Infraestructura\\Services\\AuthHttpService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T04:10:27.994Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "HealthState.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Api\\appsettings.json",
+              "RelativeToolTip": "HealthState.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-23T04:28:10.755Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Api\\Startup.cs",
+              "RelativeDocumentMoniker": "HealthState.Api\\Startup.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Api\\Startup.cs",
+              "RelativeToolTip": "HealthState.Api\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T04:26:10.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "HealthState.Api\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Api\\appsettings.Development.json",
+              "RelativeToolTip": "HealthState.Api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-23T04:23:43.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "HealthState.Infraestructura\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\DependencyInjection.cs",
+              "RelativeToolTip": "HealthState.Infraestructura\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T04:20:17.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "HealthState.Infraestructura\\Repository\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "HealthState.Infraestructura\\Repository\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:14:20.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Paciente.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Paciente.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Paciente.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:34:27.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Medico.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Medico.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Medico.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Medico.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Medico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:32.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cita.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Cita.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Cita.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Cita.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Cita.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:16.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HealthStateDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\Data\\HealthStateDbContext.cs",
+              "RelativeDocumentMoniker": "HealthState.Infraestructura\\Data\\HealthStateDbContext.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\Data\\HealthStateDbContext.cs",
+              "RelativeToolTip": "HealthState.Infraestructura\\Data\\HealthStateDbContext.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA4wCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:54:44.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PacienteGetAllQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Paciente\\Handlers\\PacienteGetAllQueryHandler.cs",
+              "RelativeDocumentMoniker": "HealthState.Aplicacion\\Paciente\\Handlers\\PacienteGetAllQueryHandler.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Paciente\\Handlers\\PacienteGetAllQueryHandler.cs",
+              "RelativeToolTip": "HealthState.Aplicacion\\Paciente\\Handlers\\PacienteGetAllQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:36:51.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Api\\Controllers\\PacienteController.cs",
+              "RelativeDocumentMoniker": "HealthState.Api\\Controllers\\PacienteController.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Api\\Controllers\\PacienteController.cs",
+              "RelativeToolTip": "HealthState.Api\\Controllers\\PacienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:29:42.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Common\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "HealthState.Aplicacion\\Common\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Common\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "HealthState.Aplicacion\\Common\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:16:14.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Usuario.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Usuario.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Usuario.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:58.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Tratamiento.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Tratamiento.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Tratamiento.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Tratamiento.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Tratamiento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:54.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TipoSolicitude.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\TipoSolicitude.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\TipoSolicitude.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\TipoSolicitude.cs",
+              "RelativeToolTip": "HealthState.Dominio\\TipoSolicitude.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:50.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Solicitude.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Solicitude.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Solicitude.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Solicitude.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Solicitude.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:41.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Role.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Role.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Role.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:37.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Factura.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Factura.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Factura.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:28.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Estado.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Estado.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Estado.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Estado.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Estado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:22.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DetalleFactura.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\DetalleFactura.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\DetalleFactura.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\DetalleFactura.cs",
+              "RelativeToolTip": "HealthState.Dominio\\DetalleFactura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:19.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Aseguradora.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Aseguradora.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Aseguradora.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Aseguradora.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Aseguradora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:39:12.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PacienteGetAllQuery.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Paciente\\Queries\\PacienteGetAllQuery.cs",
+              "RelativeDocumentMoniker": "HealthState.Aplicacion\\Paciente\\Queries\\PacienteGetAllQuery.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Paciente\\Queries\\PacienteGetAllQuery.cs",
+              "RelativeToolTip": "HealthState.Aplicacion\\Paciente\\Queries\\PacienteGetAllQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:35:51.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PacienteModel.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Paciente\\Models\\PacienteModel.cs",
+              "RelativeDocumentMoniker": "HealthState.Aplicacion\\Paciente\\Models\\PacienteModel.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Paciente\\Models\\PacienteModel.cs",
+              "RelativeToolTip": "HealthState.Aplicacion\\Paciente\\Models\\PacienteModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:33:35.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ISoftDelete.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Types\\ISoftDelete.cs",
+              "RelativeDocumentMoniker": "HealthState.Dominio\\Types\\ISoftDelete.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Dominio\\Types\\ISoftDelete.cs",
+              "RelativeToolTip": "HealthState.Dominio\\Types\\ISoftDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:20:38.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PredicateBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Common\\Utils\\PredicateBuilder.cs",
+              "RelativeDocumentMoniker": "HealthState.Aplicacion\\Common\\Utils\\PredicateBuilder.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Common\\Utils\\PredicateBuilder.cs",
+              "RelativeToolTip": "HealthState.Aplicacion\\Common\\Utils\\PredicateBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:17:29.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Common\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "HealthState.Aplicacion\\Common\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Aplicacion\\Common\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "HealthState.Aplicacion\\Common\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:15:48.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "HealthState.Infraestructura\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\Repository\\Repository.cs",
+              "RelativeToolTip": "HealthState.Infraestructura\\Repository\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:13:49.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuthHttpService.cs",
+              "DocumentMoniker": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\Services\\AuthHttpService.cs",
+              "RelativeDocumentMoniker": "HealthState.Infraestructura\\Services\\AuthHttpService.cs",
+              "ToolTip": "C:\\Users\\jarol\\Desktop\\Unicda\\IngenieriaServiciosWeb\\ProyectoWeb8\\HealthState.Infraestructura\\Services\\AuthHttpService.cs",
+              "RelativeToolTip": "HealthState.Infraestructura\\Services\\AuthHttpService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T04:10:27.994Z"
             }
           ]
         }
