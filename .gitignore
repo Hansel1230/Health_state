@@ -1,5 +1,122 @@
-﻿################################################################################
-# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
-################################################################################
+﻿# Visual Studio / .NET
 
-/.vs/HealthState/FileContentIndex
+## Ignore Visual Studio temporary files and user-specific settings
+.vs/                  # Visual Studio's hidden solution folder (contains user-specific settings and temporary files)
+*.suo                 # Solution User Options file
+*.user                # User options file (for projects)
+*.opensdf             # SQL Server Compact Edition SDF database file
+*.jfm                 # Visual Studio Just-In-Time debugger file
+*.tlog                # MSBuild Task Logs
+*.log                 # Log files
+*.pdb                 # Program Debug Database files
+*.idb                 # Intermediate Debugging Information files
+*.psess               # Performance session files
+
+## Ignore Build Results
+[Dd]ebug/             # Debug build output folder
+[Rr]elease/           # Release build output folder
+[Bb]in/               # Binary output folder (e.g., bin/Debug, bin/Release)
+[Oo]bj/               # Object files folder (intermediate compilation output)
+artifacts/            # Output from build pipelines (e.g., Azure DevOps, GitHub Actions)
+
+## Ignore Packages
+packages/             # NuGet packages folder (old style, for packages.config)
+*.nuget.props         # NuGet related props file
+*.nuget.targets       # NuGet related targets file
+
+# Newer .NET Core/5+/6+ project output
+**/bin/               # All bin folders recursively
+**/obj/               # All obj folders recursively
+
+## Ignore Resharper/Rider files
+*.resharper           # ReSharper solution-wide settings
+*.DotSettings         # ReSharper/Rider settings file
+
+## Ignore StyleCop files
+StyleCop.Cache        # StyleCop cache file
+
+## Ignore XUnit/NUnit test results
+*.trx                 # Visual Studio Test Results file
+TestResults/          # Folder for test results
+
+## Ignore other common temporary files
+*.scc                 # Source control auxiliary files
+*.vssscc              # Visual SourceSafe files
+[Bb]ackup*/           # Backup folders
+*.bak                 # Backup files
+*.tmp                 # Temporary files
+
+## Ignore generated files for web projects
+*.Designer.cs         # Generated designer files (e.g., in Web Forms or some specific UI frameworks)
+*.csproj.user         # User-specific project settings
+*.xproj               # DNX project file
+.vspscc               # Visual Studio Project Source Control Cache
+.userprefs            # Rider IDE user preferences
+
+## Ignore database related files
+*.mdf                 # SQL Server database primary data file
+*.ldf                 # SQL Server database log file
+*.sdf                 # SQL Server Compact Edition file
+
+## Ignore Azure/Cloud related files
+*.publishsettings     # Publish settings file
+*.vsix                # VSIX deployment package
+*.vsixmanifest        # VSIX manifest file
+.tfignore             # Team Foundation Server ignore file
+_UpgradeReport_Files/ # Upgrade Report files
+
+## Misc
+logs/                 # Custom log folder (if you have one)
+UserSecretsId         # User secrets ID file
+appsettings.Development.json # Often contains local sensitive settings
+appsettings.json.user # User specific appsettings overrides
+*.log.json            # JSON log files
+
+# Custom ignores (add any other specific files/folders you want to ignore)
+# For example, if you have a local database file:
+# MyLocalDatabase.db
+/.vs/slnx.sqlite
+/.vs/ProyectoWeb8/CopilotIndices/17.14.734.62261/CodeChunks.db-shm
+/.vs/ProyectoWeb8/CopilotIndices/17.14.734.62261/CodeChunks.db-wal
+/.vs/ProyectoWeb8/CopilotIndices/17.14.734.62261/SemanticSymbols.db-shm
+/.vs/ProyectoWeb8/CopilotIndices/17.14.734.62261/SemanticSymbols.db-wal
+*.vsidx
+/.vs/slnx.sqlite
+/HealthState.Api/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+/HealthState.Api/obj/Release/net8.0/HealthState.Api.AssemblyInfo.cs
+/HealthState.Api/obj/Release/net8.0/HealthState.Api.AssemblyInfoInputs.cache
+/HealthState.Api/obj/Release/net8.0/HealthState.Api.assets.cache
+/HealthState.Api/obj/Release/net8.0/HealthState.Api.csproj.AssemblyReference.cache
+/HealthState.Api/obj/Release/net8.0/HealthState.Api.GeneratedMSBuildEditorConfig.editorconfig
+/HealthState.Api/obj/Release/net8.0/HealthState.Api.GlobalUsings.g.cs
+/HealthState.Aplicacion/obj/Debug/net8.0/HealthState.Aplicacion.AssemblyInfo.cs
+/HealthState.Aplicacion/obj/Debug/net8.0/HealthState.Aplicacion.AssemblyInfoInputs.cache
+/HealthState.Aplicacion/obj/Debug/net8.0/HealthState.Aplicacion.assets.cache
+/HealthState.Aplicacion/obj/Debug/net8.0/HealthState.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+/HealthState.Aplicacion/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+/HealthState.Aplicacion/obj/Release/net8.0/HealthState.Aplicacion.AssemblyInfo.cs
+/HealthState.Aplicacion/obj/Release/net8.0/HealthState.Aplicacion.AssemblyInfoInputs.cache
+/HealthState.Aplicacion/obj/Release/net8.0/HealthState.Aplicacion.assets.cache
+/HealthState.Aplicacion/obj/Release/net8.0/HealthState.Aplicacion.csproj.AssemblyReference.cache
+/HealthState.Aplicacion/obj/Release/net8.0/HealthState.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+/HealthState.Aplicacion/obj/Release/net8.0/HealthState.Aplicacion.GlobalUsings.g.cs
+/HealthState.Api/obj/Debug/net8.0/HealthState.Api.AssemblyInfo.cs
+/HealthState.Api/obj/Debug/net8.0/HealthState.Api.AssemblyInfoInputs.cache
+/HealthState.Api/obj/Debug/net8.0/HealthState.Api.assets.cache
+/HealthState.Api/obj/Debug/net8.0/HealthState.Api.csproj.AssemblyReference.cache
+/HealthState.Api/obj/Debug/net8.0/HealthState.Api.GeneratedMSBuildEditorConfig.editorconfig
+/HealthState.Infraestructura/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+/HealthState.Infraestructura/obj/Release/net8.0/HealthState.Infraestructura.AssemblyInfo.cs
+/HealthState.Infraestructura/obj/Release/net8.0/HealthState.Infraestructura.AssemblyInfoInputs.cache
+/HealthState.Infraestructura/obj/Release/net8.0/HealthState.Infraestructura.assets.cache
+/HealthState.Infraestructura/obj/Release/net8.0/HealthState.Infraestructura.csproj.AssemblyReference.cache
+/HealthState.Infraestructura/obj/Release/net8.0/HealthState.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+/HealthState.Infraestructura/obj/Release/net8.0/HealthState.Infraestructura.GlobalUsings.g.cs
+/HealthState.Infraestructura/obj/Debug/net8.0/HealthState.Infraestructura.AssemblyInfo.cs
+/HealthState.Infraestructura/obj/Debug/net8.0/HealthState.Infraestructura.AssemblyInfoInputs.cache
+/HealthState.Infraestructura/obj/Debug/net8.0/HealthState.Infraestructura.assets.cache
+/HealthState.Infraestructura/obj/Debug/net8.0/HealthState.Infraestructura.csproj.AssemblyReference.cache
+/HealthState.Infraestructura/obj/Debug/net8.0/HealthState.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+/.vs/ProyectoWeb8/CopilotIndices/17.14.734.62261/CodeChunks.db
+/.vs/ProyectoWeb8/CopilotIndices/17.14.734.62261/SemanticSymbols.db
+/.vs/slnx.sqlite
