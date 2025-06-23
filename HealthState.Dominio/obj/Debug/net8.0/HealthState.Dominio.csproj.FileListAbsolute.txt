@@ -1,0 +1,15 @@
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\bin\Debug\net8.0\HealthState.Dominio.deps.json
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\bin\Debug\net8.0\HealthState.Dominio.runtimeconfig.json
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\bin\Debug\net8.0\HealthState.Dominio.dll
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\bin\Debug\net8.0\HealthState.Dominio.pdb
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.csproj.AssemblyReference.cache
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.AssemblyInfoInputs.cache
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.AssemblyInfo.cs
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.sourcelink.json
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.dll
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\refint\HealthState.Dominio.dll
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.pdb
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\HealthState.Dominio.genruntimeconfig.cache
+C:\Users\jarol\Desktop\Unicda\IngenieriaServiciosWeb\ProyectoWeb8\HealthState.Dominio\obj\Debug\net8.0\ref\HealthState.Dominio.dll

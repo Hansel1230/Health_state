@@ -1,0 +1,107 @@
+﻿# Visual Studio / .NET
+
+## Ignored by default in the .NET SDK
+# These are common build outputs and temporary files that you almost always want to ignore.
+[Bb]in/
+[Oo]bj/
+
+## Visual Studio specific files
+# Contains user-specific settings, temporary files, and IntelliSense data.
+.vs/
+
+# User-specific project options and solution-specific user options.
+*.user
+*.suo
+
+# SQL Server Compact Edition database files used by VS.
+*.sdf
+*.opensdf
+
+# Performance session files.
+*.psess
+
+# Visual Studio Just-In-Time debugger file.
+*.jfm
+
+# Generated designer files (e.g., in Web Forms, older WinForms).
+# Often covered by obj/ and bin/, but good to be explicit.
+*.Designer.cs
+
+# Visual Studio Project Source Control Cache.
+.vspscc
+# Source control auxiliary files (old TFS/VSS related).
+*.scc
+*.vssscc
+
+# Rider IDE user preferences.
+.userprefs
+
+## NuGet related files
+# The old style 'packages' folder for packages.config projects.
+packages/
+# NuGet related props and targets files generated during restore.
+*.nuget.props
+*.nuget.targets
+# NuGet project assets cache files. These are part of obj/ but sometimes specified separately.
+*.assets.cache
+*.csproj.nuget.dgspec.json
+*.nuget.cache
+
+## Program Debugging and Build Output
+# Program Debug Database files (usually in bin/obj, but sometimes separate).
+*.pdb
+# Intermediate Debugging Information files.
+*.idb
+# Visual Studio Test Results file.
+*.trx
+# Folder for test results.
+TestResults/
+
+## Temporary and Backup Files
+# Common temporary file extensions.
+*.tmp
+# Backup files.
+*.bak
+# Backup folders.
+[Bb]ackup*/
+
+## Database related files (local development databases)
+# SQL Server database primary data file.
+*.mdf
+# SQL Server database log file.
+*.ldf
+# SQLite journal files.
+*.sqlite-journal
+
+## Configuration and Deployment
+# Publish settings file (contains sensitive info, don't commit).
+*.publishsettings
+# Team Foundation Server ignore file (if not using Git for everything).
+.tfignore
+# User secrets ID file (for managing secrets outside source control).
+UserSecretsId
+# User-specific appsettings overrides (often contains local dev settings).
+appsettings.json.user
+# Development-specific appsettings (often contains local sensitive settings).
+appsettings.Development.json # Keep this line if you intentionally want to ignore it, otherwise remove it if you want it version controlled.
+
+## Logs
+# Generic log files.
+*.log
+# Custom log folders.
+logs/
+# JSON log files.
+*.log.json
+
+## Installer/Deployment related
+# VSIX deployment package and manifest files.
+*.vsix
+*.vsixmanifest
+
+## Other IDE/Tooling specific (e.g., ReSharper, Rider)
+# ReSharper/Rider settings files.
+*.resharper
+*.DotSettings
+
+## Upgrade Report files (generated when upgrading project versions)
+_UpgradeReport_Files/
