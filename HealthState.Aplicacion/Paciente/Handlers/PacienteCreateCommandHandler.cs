@@ -14,7 +14,7 @@ namespace HealthState.Aplicacion.Paciente.Handlers
         public async Task<PacienteModel> Handle(PacienteCreateCommand request, CancellationToken cancellationToken)
         {
             var pacienteRepository = unitOfWork.GetRepository<HealthState.Dominio.Paciente>();
-            var aseguradoraRepository = unitOfWork.GetRepository<Aseguradora>();
+            var aseguradoraRepository = unitOfWork.GetRepository<HealthState.Dominio.Aseguradora>();
 
             if (await pacienteRepository.ExistAsync(x => x.Cedula == request.Cedula))
                 throw BusinessException.Instance(string.Format(MessageResource.ValueAlreadyRegistered, request.Cedula));

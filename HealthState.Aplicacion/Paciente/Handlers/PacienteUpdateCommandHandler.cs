@@ -15,7 +15,7 @@ namespace HealthState.Aplicacion.Paciente.Handlers
         public async Task<PacienteModel> Handle(PacienteUpdateCommand request, CancellationToken cancellationToken)
         {
             var pacienteRepository = unitOfWork.GetRepository<HealthState.Dominio.Paciente>();
-            var aseguradoraRepository = unitOfWork.GetRepository<Aseguradora>();
+            var aseguradoraRepository = unitOfWork.GetRepository<HealthState.Dominio.Aseguradora>();
 
             var entity = await pacienteRepository.FirstAsync(x => x.PacienteId == request.Id);
 
