@@ -12,7 +12,6 @@ namespace HealthState.Aplicacion.Aseguradora.Mappings
 
             CreateMap<AseguradoraCreateCommand, HealthState.Dominio.Aseguradora>();
             CreateMap<AseguradoraUpdateCommand, HealthState.Dominio.Aseguradora>();
-            //CreateMap<AseguradoraDeleteCommand, HealthState.Dominio.Aseguradora>();
         }
     }
 }
