@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
-using HealthState.Aplicacion.Auth.Configurations;
-using HealthState.Aplicacion.Auth.Services;
 using HealthState.Aplicacion.Common.Behaviors;
 using HealthState.Aplicacion.Common.Configurations;
+using HealthState.Aplicacion.Common.Interfaces;
+using HealthState.Aplicacion.Common.Utils;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,17 +14,7 @@ namespace HealthState.Aplicacion
     {
         public static IServiceCollection AddApplication(this IServiceCollection service, IConfiguration configuration)
         {
-            service.Configure<AuthConfiguration>(opt =>
-            {
-                opt.Url = configuration["Auth:Url"];
-                opt.AppCode = configuration["Auth:AppCode"];
-            });
-            service.Configure<JwtConfiguration>(opt =>
-            {
-                opt.Key = configuration["JWT:Key"];
-                opt.Expire = bool.Parse(configuration["JWT:Expire"]);
-                opt.ExpireTime = int.Parse(configuration["JWT:ExpireTime"]);
-            });
+            service.AddSingleton<IUtilidadesJwt, UtilidadesJwt>();
 
             //LIBRERIAS
             service.AddMediatR(opt => opt.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
@@ -33,8 +23,6 @@ namespace HealthState.Aplicacion
             //VALIDADORES
             service.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             service.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidatorBehavior<,>));
-
-            //SERVICIOS 
 
             return service;
         }
