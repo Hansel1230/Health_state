@@ -4,9 +4,7 @@ using HealthState.Aplicacion.Common.Models;
 using HealthState.Aplicacion.Common.Utils;
 using HealthState.Aplicacion.Paciente.Models;
 using HealthState.Aplicacion.Paciente.Queries;
-using HealthState.Dominio;
 using MediatR;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace HealthState.Aplicacion.Paciente.Handlers
 {
@@ -14,7 +12,6 @@ namespace HealthState.Aplicacion.Paciente.Handlers
     {
         public async Task<PaginationResponseModel<PacienteModel>> Handle(PacienteGetAllQuery request, CancellationToken cancellationToken)
         {
-            //var repository = unitOfWork.GetRepository<Paciente>();
             var repository = unitOfWork.GetRepository<HealthState.Dominio.Paciente>();
             var query = PredicateBuilder.Build<HealthState.Dominio.Paciente>();
 
