@@ -2,12 +2,14 @@
 using HealthState.Aplicacion.Aseguradora.Models;
 using HealthState.Aplicacion.Aseguradora.Queries;
 using HealthState.Controllers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HealthState.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
 
     public class AseguradoraController : ApiController
     {
