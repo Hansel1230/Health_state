@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace HealthState.Dominio;
+﻿namespace HealthState.Dominio;
 
 public partial class Usuario
 {
