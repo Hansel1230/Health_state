@@ -1,6 +1,5 @@
 using HealthState.Aplicacion;
 using HealthState.Infraestructura;
-using HealthState.Aplicacion.Auth.Services;
 using HealthState.Aplicacion.Common.Exceptions;
 using HealthState.Aplicacion.Common.Models;
 using Microsoft.AspNetCore.Diagnostics;
@@ -22,7 +21,6 @@ namespace HealthState
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            //Add services to container 
             services.AddHttpClient();
 
             services.AddApplication(Configuration);
@@ -41,27 +39,27 @@ namespace HealthState
                     Scheme = "Bearer"
                 });
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+        {
+            {
+                new OpenApiSecurityScheme
                 {
-                    {
-                        new OpenApiSecurityScheme
-                        {
-                        Reference = new OpenApiReference
-                        {
-                            Type = ReferenceType.SecurityScheme,
-                             Id = "Bearer"
-                        },
-                        Scheme = "Bearer",
-                        Name = "Bearer",
-                        In = ParameterLocation.Header
-                        } ,
-                        new List<string>()
-                    }
-                });
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                        Id = "Bearer"
+                },
+                Scheme = "Bearer",
+                Name = "Bearer",
+                In = ParameterLocation.Header
+                } ,
+                new List<string>()
+            }
+        });
             });
 
             services.AddCors(opt => opt.AddPolicy("all", x => x.AllowAnyOrigin()
-                                                                .AllowAnyHeader()
-                                                                .AllowAnyMethod()));
+                                                            .AllowAnyHeader()
+                                                            .AllowAnyMethod()));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, Serilog.ILogger logger)

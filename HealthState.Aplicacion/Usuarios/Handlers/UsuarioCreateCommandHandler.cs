@@ -2,15 +2,16 @@
 using HealthState.Aplicacion.Common.Exceptions;
 using HealthState.Aplicacion.Common.Interfaces;
 using HealthState.Aplicacion.Common.Resources;
+using HealthState.Aplicacion.Common.Utils;
 using HealthState.Aplicacion.Usuarios.Commands;
 using HealthState.Aplicacion.Usuarios.Models;
 using MediatR;
-using HealthState.Dominio; // Asegúrate de tener este using
 
 namespace HealthState.Aplicacion.Usuarios.Handlers
 {
-    public class UsuarioCreateCommandHandler(IUnitOfWork unitOfWork, IMapper mapper) : IRequestHandler<UsuarioCreateCommand, UsuarioModel>
+    public class UsuarioCreateCommandHandler(IUnitOfWork unitOfWork, IMapper mapper, IUtilidadesJwt utilidades) : IRequestHandler<UsuarioCreateCommand, UsuarioModel>
     {
+
         public async Task<UsuarioModel> Handle(UsuarioCreateCommand request, CancellationToken cancellationToken)
         {
             var repository = unitOfWork.GetRepository<HealthState.Dominio.Usuario>();
@@ -28,6 +29,7 @@ namespace HealthState.Aplicacion.Usuarios.Handlers
             var entity = mapper.Map<HealthState.Dominio.Usuario>(request);
 
             entity.Rol = rolEntity;
+            entity.Contrasena = utilidades.encriptarSha256(request.Contrasena);
 
             await repository.InsertAsync(entity);
 

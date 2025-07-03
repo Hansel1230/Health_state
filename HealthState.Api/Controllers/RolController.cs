@@ -2,13 +2,14 @@
 using HealthState.Aplicacion.Rol.Models;
 using HealthState.Aplicacion.Rol.Queries;
 using HealthState.Controllers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HealthState.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [Authorize]
     public class RolController : ApiController
     {
         [HttpGet("all")]

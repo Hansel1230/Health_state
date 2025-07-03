@@ -8,7 +8,7 @@ using MediatR;
 
 namespace HealthState.Aplicacion.Usuarios.Handlers
 {
-    public class UsuarioUpdateCommandHandler(IUnitOfWork unitOfWork, IMapper mapper) : IRequestHandler<UsuarioUpdateCommand, UsuarioModel>
+    public class UsuarioUpdateCommandHandler(IUnitOfWork unitOfWork, IMapper mapper, IUtilidadesJwt utilidades) : IRequestHandler<UsuarioUpdateCommand, UsuarioModel>
     {
         public async Task<UsuarioModel> Handle(UsuarioUpdateCommand request, CancellationToken cancellationToken)
         {
@@ -19,7 +19,7 @@ namespace HealthState.Aplicacion.Usuarios.Handlers
             if (entity == null)
                 throw BusinessException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist, request.UsuarioId));
 
-            if (await repository.ExistAsync(x => x.Usuario1 == request.Usuario1))
+            if (await repository.ExistAsync(x => x.Usuario1 == request.Usuario1 && x.UsuarioId != request.UsuarioId))
                 throw BusinessException.Instance(string.Format(MessageResource.ValueAlreadyRegistered, request.Usuario1));
 
             var rolRepository = unitOfWork.GetRepository<HealthState.Dominio.Role>();
@@ -30,6 +30,7 @@ namespace HealthState.Aplicacion.Usuarios.Handlers
             var rolEntity = await rolRepository.FirstAsync(x => x.RolId == request.RolId.Value);
 
             entity.Rol = rolEntity;
+            entity.Contrasena = utilidades.encriptarSha256(request.Contrasena);
 
             mapper.Map(request, entity);
 

@@ -2,7 +2,10 @@
 using HealthState.Aplicacion.Usuarios.Models;
 using HealthState.Aplicacion.Usuarios.Queries;
 using HealthState.Controllers;
+using HealthState.Dominio;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace HealthState.Api.Controllers
 {
@@ -12,12 +15,14 @@ namespace HealthState.Api.Controllers
     public class UsuarioController : ApiController
     {
         [HttpGet("all")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<UsuarioModel>>> Get([FromQuery] UsuarioGetAllQuery query)
         {
             var response = await Mediator.Send(query);
             return Ok(response);
         }
         [HttpGet("{id:int}")]
+        [Authorize]
         public async Task<ActionResult<UsuarioModel>> Get(int id)
         {
             var query = new UsuarioGetByIdQuery(id);
@@ -31,6 +36,7 @@ namespace HealthState.Api.Controllers
             return Ok(response);
         }
         [HttpPut("{id:int}")]
+        [Authorize]
         public async Task<ActionResult<UsuarioModel>> Put(int id, UsuarioUpdateCommand command)
         {
             command.UsuarioId = id;
@@ -38,6 +44,7 @@ namespace HealthState.Api.Controllers
             return Ok(response);
         }
         [HttpDelete("{id:int}")]
+        [Authorize]
         public async Task<ActionResult> Delete(int id)
         {
             var command = new UsuarioDeleteCommand { Id = id};

@@ -1,11 +1,10 @@
-﻿using HealthState.Aplicacion.Auth.Models;
-using MediatR;
+﻿using MediatR;
 
 namespace HealthState.Aplicacion.Auth.Commands
 {
-    public class LoginCommand : IRequest<AuthApiUserModel>
+    public class LoginCommand : IRequest<string>
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string Usuario { get; set; }
+        public string Clave { get; set; }
     }
 }

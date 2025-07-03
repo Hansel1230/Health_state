@@ -2,13 +2,14 @@
 using HealthState.Aplicacion.Medico.Models;
 using HealthState.Aplicacion.Medico.Queries;
 using HealthState.Controllers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HealthState.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [Authorize]
     public class MedicoController : ApiController
     {
         [HttpGet("all")]
