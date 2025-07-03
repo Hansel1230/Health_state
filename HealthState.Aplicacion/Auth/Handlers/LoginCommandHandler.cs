@@ -1,33 +1,28 @@
-﻿using AutoMapper;
-using HealthState.Aplicacion.Auth.Commands;
-using HealthState.Aplicacion.Auth.Models;
-using HealthState.Aplicacion.Auth.Services;
-using HealthState.Aplicacion.Common.Exceptions;
-using MediatR;
-using HealthState.Aplicacion.Auth;
+﻿using HealthState.Aplicacion.Auth.Commands;
 using HealthState.Aplicacion.Auth.Resources;
+using HealthState.Aplicacion.Common.Exceptions;
+using HealthState.Aplicacion.Common.Interfaces;
+using HealthState.Aplicacion.Usuarios.Models;
+using MediatR;
 
 namespace HealthState.Aplicacion.Auth.Handlers
 {
-    public class LoginCommandHandler : IRequestHandler<LoginCommand, AuthApiUserModel>
+    public class LoginCommandHandler(IUnitOfWork unitOfWork, IUtilidadesJwt utilidades) : IRequestHandler<LoginCommand, string>
     {
-        private readonly IAuthHttpService authHttpService;
-        private readonly IMapper mapper;
-
-        public LoginCommandHandler(IAuthHttpService authHttpService, IMapper mapper)
+        public async Task<string> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
-            this.authHttpService = authHttpService;
-            this.mapper = mapper;
-        }
+            var repository = unitOfWork.GetRepository<HealthState.Dominio.Usuario>();
 
-        public async Task<AuthApiUserModel> Handle(LoginCommand command, CancellationToken cancellationToken)
-        {
-            var model = mapper.Map<AuthApiLoginModel>(command);
-            var response = await authHttpService.LoginAsync(model);
+            var entity = await repository.FirstAsync(u => u.Usuario1 == request.Usuario
+                && u.Contrasena == utilidades.encriptarSha256(request.Clave));
 
-            if (response == null) throw new BusinessException(AuthResource.UserNotFound);
-
-            return response;
+            if (entity == null)
+                throw BusinessException.Instance(string.Format(AuthResource.UserNotFound));
+            else
+            {
+                UsuarioModel usuarioModel = new UsuarioModel { Usuario1 = request.Usuario, Contrasena = request.Clave };
+                return utilidades.GenerarJwt(usuarioModel);
+            }
         }
     }
 }
