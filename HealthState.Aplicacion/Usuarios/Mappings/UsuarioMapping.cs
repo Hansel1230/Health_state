@@ -15,7 +15,8 @@ namespace HealthState.Aplicacion.Usuarios.Mappings
                 .ForMember(dest => dest.RolId, opt => opt.MapFrom(src => src.RolId))
                 .ForMember(dest => dest.Rol, opt => opt.Ignore()); 
 
-            CreateMap<UsuarioUpdateCommand, HealthState.Dominio.Usuario>();
+            CreateMap<UsuarioUpdateCommand, HealthState.Dominio.Usuario>()
+                .ForMember(dest => dest.Contrasena, opt => opt.Ignore());
 
         }
     }
