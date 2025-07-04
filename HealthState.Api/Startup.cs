@@ -76,6 +76,8 @@ namespace HealthState
                 var exception = context.Features.Get<IExceptionHandlerPathFeature>().Error;
                 if (exception is ValidationException || exception is BusinessException)
                     context.Response.StatusCode = StatusCodes.Status400BadRequest;
+                else if (exception is NotFoundException)
+                    context.Response.StatusCode = StatusCodes.Status404NotFound;
                 else
                     logger.Error(exception, exception.Message);
 
