@@ -9,4 +9,10 @@ namespace HealthState.Aplicacion.Common.Exceptions
 
         public static BusinessException Instance(string message) => new BusinessException(message);
     }
+    public class NotFoundException : Exception
+    {
+        public NotFoundException(string message) : base(message) { }
+
+        public static NotFoundException Instance(string message) => new NotFoundException(message);
+    }
 }
