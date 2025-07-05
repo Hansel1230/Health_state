@@ -18,7 +18,7 @@ namespace HealthState.Aplicacion.Factura.Handlers
                 includeProperties: [nameof(HealthState.Dominio.Paciente)]);
 
             if (entity == null)
-                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist, request.FacturaId));
+                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
             mapper.Map(request, entity);
 

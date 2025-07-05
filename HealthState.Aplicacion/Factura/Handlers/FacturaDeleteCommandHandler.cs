@@ -16,7 +16,7 @@ namespace HealthState.Aplicacion.Factura.Handlers
             var entity = await repository.FirstAsync(x => x.FacturaId == request.Id);
 
             if (entity == null)
-                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist, request.Id));
+                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
             repository.Delete(entity);
 

@@ -17,7 +17,7 @@ namespace HealthState.Aplicacion.Auth.Handlers
                 && u.Contrasena == utilidades.encriptarSha256(request.Clave));
 
             if (entity == null)
-                throw BusinessException.Instance(string.Format(AuthResource.UserNotFound));
+                throw NotFoundException.Instance(string.Format(AuthResource.UserNotFound));
             else
             {
                 UsuarioModel usuarioModel = new UsuarioModel { Usuario1 = request.Usuario, Contrasena = request.Clave };

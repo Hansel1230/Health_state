@@ -4,7 +4,6 @@ using HealthState.Aplicacion.Aseguradora.Models;
 using HealthState.Aplicacion.Common.Exceptions;
 using HealthState.Aplicacion.Common.Interfaces;
 using HealthState.Aplicacion.Common.Resources;
-using HealthState.Aplicacion.Paciente.Models;
 using MediatR;
 
 namespace HealthState.Aplicacion.Aseguradora.Handlers
@@ -18,7 +17,7 @@ namespace HealthState.Aplicacion.Aseguradora.Handlers
             var entity = await repository.FirstAsync(x => x.AseguradoraId == request.AseguradoraId);
 
             if (entity == null)
-                throw BusinessException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist, request.AseguradoraId));
+                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
             if (await repository.ExistAsync(x => x.Nombre == request.Nombre))
                 throw BusinessException.Instance(string.Format(MessageResource.ValueAlreadyRegistered, request.Nombre));

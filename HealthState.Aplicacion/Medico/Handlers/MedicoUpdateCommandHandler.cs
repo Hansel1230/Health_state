@@ -17,7 +17,7 @@ namespace HealthState.Aplicacion.Medico.Handlers
             var entity = await repository.FirstAsync(x => x.MedicoId == request.MedicoId);
 
             if (entity == null)
-                throw BusinessException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist, request.MedicoId));
+                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
             if (await repository.ExistAsync(x => x.Cedula == request.Cedula))
                 throw BusinessException.Instance(string.Format(MessageResource.ValueAlreadyRegistered, request.Cedula));

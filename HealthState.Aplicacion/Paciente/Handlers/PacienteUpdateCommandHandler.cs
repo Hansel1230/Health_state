@@ -20,7 +20,7 @@ namespace HealthState.Aplicacion.Paciente.Handlers
             var entity = await pacienteRepository.FirstAsync(x => x.PacienteId == request.Id);
 
             if (entity == null)
-                throw BusinessException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist, request.Id));
+                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
             if (await pacienteRepository.ExistAsync(x => x.Cedula == request.Cedula && x.PacienteId != request.Id))
                 throw BusinessException.Instance(string.Format(MessageResource.ValueAlreadyRegistered, request.Cedula));
@@ -29,10 +29,10 @@ namespace HealthState.Aplicacion.Paciente.Handlers
 
             if (request.AseguradoraId.HasValue && request.AseguradoraId.Value != 0)
             {
-                var aseguradora = await aseguradoraRepository.FirstAsync(x => x.AseguradoraId == request.AseguradoraId.Value);
+                var aseguradora = await aseguradoraRepository.FirstAsync(x => x.AseguradoraId == request.AseguradoraId);
 
                 if (aseguradora == null)
-                    throw BusinessException.Instance(string.Format(MessageResource.EntityReferencedNotExist));
+                    throw NotFoundException.Instance(string.Format(MessageResource.EntityReferencedNotExist, "aseguradora", request.AseguradoraId));
 
                 entity.Aseguradora = aseguradora;
                 entity.AseguradoraId = aseguradora.AseguradoraId;
