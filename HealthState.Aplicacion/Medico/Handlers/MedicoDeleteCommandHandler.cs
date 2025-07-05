@@ -15,7 +15,7 @@ namespace HealthState.Aplicacion.Medico.Handlers
             var entity = await repository.FirstAsync(x => x.MedicoId == request.Id);
 
             if (entity == null)
-                throw BusinessException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist, request.Id));
+                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
             repository.Delete(entity);
 

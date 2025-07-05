@@ -121,7 +121,7 @@
     <value>El registro {0} no existe o fue previamente eliminado.</value>
   </data>
   <data name="EntityReferencedNotExist" xml:space="preserve">
-    <value>El registro {PropertyName} referenciado no existe o fue previamente eliminado.</value>
+    <value>El registro de {0} con el id {1} no existe o fue previamente eliminado.</value>
   </data>
   <data name="EntityToUpdateOrDeleteNotExist" xml:space="preserve">
     <value>El registro que desea actualizar o eliminar no existe o fue previamente eliminado</value>

@@ -25,7 +25,7 @@ namespace HealthState.Aplicacion.Paciente.Handlers
             {
                 var aseguradora = await aseguradoraRepository.FirstAsync(x => x.AseguradoraId == request.AseguradoraId.Value);
                 if (aseguradora == null)
-                    throw BusinessException.Instance(string.Format(MessageResource.EntityReferencedNotExist));
+                    throw NotFoundException.Instance(string.Format(MessageResource.EntityReferencedNotExist, "aseguradora", request.AseguradoraId));
 
                 entity.Aseguradora = aseguradora;
             }

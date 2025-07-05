@@ -15,7 +15,7 @@ namespace HealthState.Aplicacion.Rol.Handlers
             var entity = await repository.FirstAsync(x => x.RolId == request.Id);
 
             if (entity == null)
-                throw BusinessException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist, request.Id));
+                throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
             repository.Delete(entity);
 

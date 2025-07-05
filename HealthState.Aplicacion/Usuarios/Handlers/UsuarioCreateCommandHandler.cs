@@ -2,7 +2,6 @@
 using HealthState.Aplicacion.Common.Exceptions;
 using HealthState.Aplicacion.Common.Interfaces;
 using HealthState.Aplicacion.Common.Resources;
-using HealthState.Aplicacion.Common.Utils;
 using HealthState.Aplicacion.Usuarios.Commands;
 using HealthState.Aplicacion.Usuarios.Models;
 using MediatR;
@@ -21,10 +20,10 @@ namespace HealthState.Aplicacion.Usuarios.Handlers
 
             var rolRepository = unitOfWork.GetRepository<HealthState.Dominio.Role>();
 
-            if (!await rolRepository.ExistAsync(x => x.RolId == request.RolId.Value))
-                throw BusinessException.Instance(string.Format(MessageResource.EntityReferencedNotExist, request.RolId));
+            if (!await rolRepository.ExistAsync(x => x.RolId == request.RolId))
+                throw NotFoundException.Instance(string.Format(MessageResource.EntityReferencedNotExist, "rol", request.RolId));
 
-            var rolEntity = await rolRepository.FirstAsync(x => x.RolId == request.RolId.Value);
+            var rolEntity = await rolRepository.FirstAsync(x => x.RolId == request.RolId);
 
             var entity = mapper.Map<HealthState.Dominio.Usuario>(request);
 
