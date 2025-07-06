@@ -15,6 +15,7 @@ namespace HealthState.Aplicacion.Paciente.Models
         public string? Direccion { get; set; }
 
         public string? Telefono { get; set; }
+        public string? Cedula { get; set; }
         public string? Email { get; set; }
         public int? PolizaId { get; set; }
         public string? Aseguradora { get; set; }
