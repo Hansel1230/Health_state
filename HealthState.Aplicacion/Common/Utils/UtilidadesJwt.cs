@@ -44,7 +44,7 @@ namespace HealthState.Aplicacion.Common.Utils
 
             var jwtConfig = new JwtSecurityToken(
                 claims: userClaims,
-                expires: DateTime.UtcNow.AddMinutes(10),
+                expires: DateTime.UtcNow.AddMinutes(int.Parse(Encoding.UTF8.GetBytes(_configuration["JWT:ExpireTime"]))),
                 signingCredentials: credentials
                 );
 
