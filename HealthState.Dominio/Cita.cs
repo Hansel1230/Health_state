@@ -23,5 +23,4 @@ public partial class Cita
 
     public virtual Paciente? Paciente { get; set; }
 
-    public virtual ICollection<Tratamiento> Tratamientos { get; set; } = new List<Tratamiento>();
 }

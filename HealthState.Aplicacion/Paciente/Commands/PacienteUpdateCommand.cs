@@ -7,6 +7,7 @@ namespace HealthState.Aplicacion.Paciente.Commands
     {
         [JsonIgnore] public int Id { get; set; }
         public string Nombre { get; set; } = null!;
+        public string Apellido { get; set; } = null!;
         public DateOnly? FechaNacimiento { get; set; }
         public string? Sexo { get; set; }
         public string? Direccion { get; set; }

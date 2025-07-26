@@ -19,7 +19,7 @@ namespace HealthState.Aplicacion.Medico.Handlers
             if (entity == null)
                 throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
-            if (await repository.ExistAsync(x => x.Cedula == request.Cedula))
+            if (await repository.ExistAsync(x => x.Cedula == request.Cedula && x.MedicoId != request.MedicoId))
                 throw BusinessException.Instance(string.Format(MessageResource.ValueAlreadyRegistered, request.Cedula));
 
             mapper.Map(request, entity);
