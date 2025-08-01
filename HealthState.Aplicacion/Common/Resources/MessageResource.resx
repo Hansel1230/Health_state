@@ -141,6 +141,12 @@
   <data name="GeneralErrorApi" xml:space="preserve">
     <value>No se pudo establecer comunicación con el servicio de seguridad o el código de aplicación es invalido.</value>
   </data>
+  <data name="InvalidAmount" xml:space="preserve">
+    <value>El monto aprobado no puede ser mayor que el monto total.</value>
+  </data>
+  <data name="InvalidInput" xml:space="preserve">
+    <value>El estado proporcionado no es válido.</value>
+  </data>
   <data name="ValueAlreadyRegistered" xml:space="preserve">
     <value>Ya existe un registro con el valor {0} guardado en la base de datos</value>
   </data>
