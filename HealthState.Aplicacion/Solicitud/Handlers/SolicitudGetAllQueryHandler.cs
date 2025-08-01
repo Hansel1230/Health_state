@@ -24,7 +24,12 @@ namespace HealthState.Aplicacion.Solicitud.Handlers
                 return new PaginationResponseModel<SolicitudModel>(Enumerable.Empty<SolicitudModel>(), 0);
 
             var data = await repository.GetAsync(query, orderBy: x => x.OrderByDescending(x => x.SolicitudId),
-                skip: request.Skip, take: request.Take, includeProperties: new[] { "Paciente" });
+                skip: request.Skip, take: request.Take, includeProperties:
+                                                     [nameof(HealthState.Dominio.Solicitude.Paciente),
+                                                     nameof(HealthState.Dominio.Solicitude.Estado),
+                                                     nameof(HealthState.Dominio.Solicitude.Aseguradora),
+                                                     nameof(HealthState.Dominio.Solicitude.Tipo)]);
+
             return new PaginationResponseModel<SolicitudModel>(mapper.Map<IEnumerable<SolicitudModel>>(data),
                 totalCount,
                 request.Skip,
