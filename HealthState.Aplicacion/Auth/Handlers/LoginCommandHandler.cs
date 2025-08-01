@@ -1,4 +1,5 @@
 ﻿using HealthState.Aplicacion.Auth.Commands;
+using HealthState.Aplicacion.Auth.Models;
 using HealthState.Aplicacion.Auth.Resources;
 using HealthState.Aplicacion.Common.Exceptions;
 using HealthState.Aplicacion.Common.Interfaces;
@@ -7,9 +8,9 @@ using MediatR;
 
 namespace HealthState.Aplicacion.Auth.Handlers
 {
-    public class LoginCommandHandler(IUnitOfWork unitOfWork, IUtilidadesJwt utilidades) : IRequestHandler<LoginCommand, string>
+    public class LoginCommandHandler(IUnitOfWork unitOfWork, IUtilidadesJwt utilidades) : IRequestHandler<LoginCommand, AuthModel>
     {
-        public async Task<string> Handle(LoginCommand request, CancellationToken cancellationToken)
+        public async Task<AuthModel> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
             var repository = unitOfWork.GetRepository<HealthState.Dominio.Usuario>();
 
@@ -21,7 +22,9 @@ namespace HealthState.Aplicacion.Auth.Handlers
             else
             {
                 UsuarioModel usuarioModel = new UsuarioModel { Usuario1 = request.Usuario, Contrasena = request.Clave };
-                return utilidades.GenerarJwt(usuarioModel);
+                var jwt = utilidades.GenerarJwt(usuarioModel);
+
+                return new AuthModel { RolId = entity.RolId, Token = jwt };
             }
         }
     }

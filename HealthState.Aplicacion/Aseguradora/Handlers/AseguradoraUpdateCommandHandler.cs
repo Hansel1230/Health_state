@@ -19,7 +19,7 @@ namespace HealthState.Aplicacion.Aseguradora.Handlers
             if (entity == null)
                 throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
-            if (await repository.ExistAsync(x => x.Nombre == request.Nombre))
+            if (await repository.ExistAsync(x => x.Nombre == request.Nombre && x.AseguradoraId != request.AseguradoraId))
                 throw BusinessException.Instance(string.Format(MessageResource.ValueAlreadyRegistered, request.Nombre));
 
             mapper.Map(request, entity);

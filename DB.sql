@@ -1,6 +1,6 @@
 USE [HealthState]
 GO
-/****** Object:  Table [dbo].[Aseguradoras]    Script Date: 23/06/2025 15:50:20 ******/
+/****** Object:  Table [dbo].[Aseguradoras]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -18,7 +18,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Citas]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Citas]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -36,7 +36,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DetalleFacturas]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[DetalleFacturas]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -52,7 +52,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Estados]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Estados]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -66,7 +66,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Facturas]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Facturas]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -83,7 +83,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Medicos]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Medicos]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -102,7 +102,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Pacientes]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Pacientes]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -118,13 +118,14 @@ CREATE TABLE [dbo].[Pacientes](
 	[PolizaID] [int] NULL,
 	[AseguradoraID] [int] NULL,
 	[Cedula] [varchar](11) NULL,
+	[Apellido] [varchar](100) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[PacienteID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Roles]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Roles]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -138,7 +139,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Solicitudes]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Solicitudes]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -160,7 +161,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TipoSolicitudes]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[TipoSolicitudes]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -174,25 +175,22 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Tratamientos]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Tratamientos]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Tratamientos](
 	[TratamientoID] [int] IDENTITY(10000000,1) NOT NULL,
-	[CitaID] [int] NULL,
 	[Descripcion] [nvarchar](200) NULL,
-	[Fecha] [date] NULL,
 	[Costo] [decimal](10, 2) NULL,
-	[Cubierto] [bit] NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[TratamientoID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Usuarios]    Script Date: 23/06/2025 15:50:21 ******/
+/****** Object:  Table [dbo].[Usuarios]    Script Date: 26/07/2025 0:39:05 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -211,6 +209,8 @@ UNIQUE NONCLUSTERED
 	[Usuario] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Pacientes] ADD  DEFAULT ('Null') FOR [Apellido]
 GO
 ALTER TABLE [dbo].[Citas]  WITH CHECK ADD FOREIGN KEY([EstadoID])
 REFERENCES [dbo].[Estados] ([EstadoID])
@@ -245,13 +245,6 @@ GO
 ALTER TABLE [dbo].[Solicitudes]  WITH CHECK ADD FOREIGN KEY([TipoID])
 REFERENCES [dbo].[TipoSolicitudes] ([TipoID])
 GO
-ALTER TABLE [dbo].[Tratamientos]  WITH CHECK ADD FOREIGN KEY([CitaID])
-REFERENCES [dbo].[Citas] ([CitaID])
-GO
 ALTER TABLE [dbo].[Usuarios]  WITH CHECK ADD FOREIGN KEY([RolID])
 REFERENCES [dbo].[Roles] ([RolID])
-GO
-USE [master]
-GO
-ALTER DATABASE [HealthState] SET  READ_WRITE 
 GO

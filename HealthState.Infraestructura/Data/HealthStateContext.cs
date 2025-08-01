@@ -146,6 +146,7 @@ public partial class HealthStateContext : DbContext
             entity.Property(e => e.Direccion).HasMaxLength(200);
             entity.Property(e => e.Email).HasMaxLength(100);
             entity.Property(e => e.Nombre).HasMaxLength(100);
+            entity.Property(e => e.Apellido).HasMaxLength(100);
             entity.Property(e => e.PolizaId).HasColumnName("PolizaID");
             entity.Property(e => e.Sexo)
             .HasConversion(new EnumToStringConverter<SexoEnum>());
@@ -209,13 +210,8 @@ public partial class HealthStateContext : DbContext
             entity.HasKey(e => e.TratamientoId).HasName("PK__Tratamie__6CFB22455B0F9260");
 
             entity.Property(e => e.TratamientoId).HasColumnName("TratamientoID");
-            entity.Property(e => e.CitaId).HasColumnName("CitaID");
             entity.Property(e => e.Costo).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.Descripcion).HasMaxLength(200);
-
-            entity.HasOne(d => d.Cita).WithMany(p => p.Tratamientos)
-                .HasForeignKey(d => d.CitaId)
-                .HasConstraintName("FK__Tratamien__CitaI__44FF419A");
         });
 
         modelBuilder.Entity<Usuario>(entity =>

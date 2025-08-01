@@ -14,10 +14,6 @@ namespace HealthState.Aplicacion.Tratamiento.Handlers
         {
             var repositoryCita = unitOfWork.GetRepository<HealthState.Dominio.Cita>();
 
-            var entityCita = repositoryCita.FirstAsync(x => x.CitaId == request.CitaId);
-            if (entityCita == null)
-                throw NotFoundException.Instance(string.Format(MessageResource.EntityReferencedNotExist, "cita", request.CitaId));
-
             var repository = unitOfWork.GetRepository<HealthState.Dominio.Tratamiento>();
 
             var entity = await repository.FirstAsync(x => x.TratamientoId == request.TratamientoId);

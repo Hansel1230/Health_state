@@ -33,7 +33,7 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Auth\Resources\AuthResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>AuthResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Common\Resources\MessageResource.resx">

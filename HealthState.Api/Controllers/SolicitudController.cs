@@ -38,6 +38,13 @@ namespace HealthState.Api.Controllers
             var response = await Mediator.Send(command);
             return Ok(response);
         }
+        [HttpPut("{id:int}/estado")]
+        public async Task<ActionResult> PutEstado(int id, [FromBody] SolicitudUpdateEstadoCommand command)
+        {
+            command.SolicitudId = id;
+            var updatedSolicitud = await Mediator.Send(command);
+            return updatedSolicitud == null ? NotFound() : Ok(updatedSolicitud);
+        }
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> Delete(int id)
         {

@@ -16,12 +16,13 @@ namespace HealthState.Controllers
         {
             try
             {
-                var token = await Mediator.Send(command);
+                var user = await Mediator.Send(command);
 
                 return Ok(new
                 {
                     isSuccess = true,
-                    token = token
+                    token = user.Token,
+                    rolId = user.RolId
                 });
             }
             catch (BusinessException ex)
