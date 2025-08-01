@@ -9,7 +9,7 @@ namespace HealthState.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class FacturaController : ApiController
     {
         [HttpGet("all")]
