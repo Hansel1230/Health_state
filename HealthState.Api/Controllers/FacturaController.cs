@@ -38,6 +38,12 @@ namespace HealthState.Api.Controllers
             var response = await Mediator.Send(command);
             return Ok(response);
         }
+        [HttpPut("{id:int}/facturar")]
+        public async Task<ActionResult<FacturaModel>> Facturar(int id)
+        {
+            var response = await Mediator.Send(new FacturaPagarCommand { FacturaId = id });
+            return Ok(response);
+        }
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> Delete(int id)
         {

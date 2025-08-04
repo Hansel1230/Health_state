@@ -16,4 +16,23 @@ namespace HealthState.Aplicacion.IntegracionARS.Model
         public decimal? MontoAprobado { get; set; }
         public string Hospital { get; set; }
     }
+    public class PayBillResponseDTO
+    {
+        public string? TransferenceId { get; set; }
+
+        public double TotalAmount { get; set; }
+
+        public double PaidAmount { get; set; }
+        public double RefusedAmount { get; set; }
+
+        public List<BillDTO>? Bills { get; set; }
+    }
+    public class BillDTO
+    {
+        public string AuthorizationNumber { get; set; }
+
+        public string Status { get; set; }
+
+        public string Details { get; set; }
+    }
 }

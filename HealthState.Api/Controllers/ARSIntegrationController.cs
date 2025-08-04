@@ -1,15 +1,17 @@
 ﻿using HealthState.Aplicacion.IntegracionARS.Commands.MakeAuthorization;
 using HealthState.Aplicacion.IntegracionARS.Queries.GetByIdSolicitud;
 using HealthState.Aplicacion.IntegracionARS.Queries.ValidateAffiliate;
+using HealthState.Aplicacion.IntegracionARS.Model;
 using HealthState.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using HealthState.Aplicacion.IntegracionARS.Commands.PayBills;
 
 namespace HealthState.Api.Controllers
 {
     [Route("api/ars")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class ARSIntegrationController : ApiController
     {
         [HttpGet("solicitud/{id}")]
@@ -55,6 +57,22 @@ namespace HealthState.Api.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
 
+        }
+
+        [HttpPost("pay-bill")]
+        public async Task<IActionResult> PayBill([FromBody] PayBillRequestModel request)
+        {
+            try
+            {
+                // Aquí deberías inyectar y usar tu servicio que llama al API externo
+                // Por ejemplo, IAvalancheService.PayBillsAsync(...)
+                var response = await Mediator.Send(new PayBillsCommand(request));
+                return Ok(response);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
         }
     }
 }

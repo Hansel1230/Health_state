@@ -29,7 +29,21 @@ namespace HealthState.Api.Controllers
         public async Task<ActionResult<SolicitudModel>> Post(SolicitudCreateCommand command)
         {
             var response = await Mediator.Send(command);
-            return Ok(response);
+
+            var avalancheConsulta = new SolicitudAvalancheConsultaCommand
+            {
+                //TipoDocumento = "CED", 
+                NumeroDocumento = response.Cedula,
+                NumeroPoliza = response.PolizaId,
+                TipoSolicitud = response.TipoSolicitud,
+                Descripcion = response.Descripcion,
+                Observaciones = response.Observaciones,
+                MontoSolicitud = response.MontoTotal ?? 0
+            };
+
+            var resultadoAvalanche = await Mediator.Send(avalancheConsulta);
+
+            return Ok(new { Solicitud = response, Avalanche = resultadoAvalanche });
         }
         [HttpPut("{id:int}")]
         public async Task<ActionResult<SolicitudModel>> Put(int id, SolicitudUpdateCommand command)
