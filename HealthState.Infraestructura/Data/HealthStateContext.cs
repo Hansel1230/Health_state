@@ -126,7 +126,7 @@ public partial class HealthStateContext : DbContext
             entity.Property(e => e.MedicoId).HasColumnName("MedicoID");
             entity.Property(e => e.Apellido).HasMaxLength(100);
             entity.Property(e => e.Cedula)
-                .HasMaxLength(11)
+                .HasMaxLength(13)
                 .IsUnicode(false);
             entity.Property(e => e.Email).HasMaxLength(100);
             entity.Property(e => e.Especialidad).HasMaxLength(100);
@@ -141,7 +141,7 @@ public partial class HealthStateContext : DbContext
             entity.Property(e => e.PacienteId).HasColumnName("PacienteID");
             entity.Property(e => e.AseguradoraId).HasColumnName("AseguradoraID");
             entity.Property(e => e.Cedula)
-                .HasMaxLength(11)
+                .HasMaxLength(13)
                 .IsUnicode(false);
             entity.Property(e => e.Direccion).HasMaxLength(200);
             entity.Property(e => e.Email).HasMaxLength(100);
