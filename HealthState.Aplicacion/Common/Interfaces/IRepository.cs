@@ -15,7 +15,7 @@ namespace HealthState.Aplicacion.Common.Interfaces
                                                         string[] includeProperties = null);
         Task<int> CountAsync(Expression<Func<T, bool>> filter = null);
         Task<T> GetByKeyAsync(params object[] key);
-        Task InsertAsync(T entity);
+        Task<T> InsertAsync(T entity);
         Task InsertManyAsync(IEnumerable<T> entities);
         Task DeleteAsync(params object[] key);
         void Delete(T entityToDelete);

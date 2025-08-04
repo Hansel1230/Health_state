@@ -127,7 +127,11 @@ namespace HealthState.Infraestructura.Repository
 
         public async Task<T> GetByKeyAsync(params object[] key) => await dbSet.FindAsync(key);
 
-        public async Task InsertAsync(T entity) => await dbSet.AddAsync(entity);
+        public async Task<T> InsertAsync(T entity)
+        {
+            await dbSet.AddAsync(entity);
+            return entity;
+        }
 
         public async Task InsertManyAsync(IEnumerable<T> entities) => await dbSet.AddRangeAsync(entities);
 

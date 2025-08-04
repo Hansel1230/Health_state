@@ -49,5 +49,22 @@ namespace HealthState.Aplicacion.Servicios
 
             return result;
         }
+
+        public async Task<AuthorizationResponseModel> MakeAuthorizationAsync(AuthorizationRequestModel request, CancellationToken cancellationToken = default)
+        {
+            AuthorizationResponseModel result = new();
+
+            try
+            {
+                var token = await _tokenService.GetTokenAsync(cancellationToken);
+                result = await _apiClient.MakeAuthorization(request, token);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            return result;
+        }
     }
 }

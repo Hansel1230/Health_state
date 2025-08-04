@@ -7,5 +7,6 @@ namespace HealthState.Aplicacion.Interfaces.Clientes
     {
         Task<GetByIdSolicitudQueryResponse> GetAuthorizationById(int id, string token, CancellationToken cancellationToken = default);
         Task<AffiliateModel> ValidateAffiliate(ValidateAffiliateRequestModel query, string token, CancellationToken cancellationToken = default);
+        Task<AuthorizationResponseModel> MakeAuthorization(AuthorizationRequestModel request, string token, CancellationToken cancellationToken = default);
     }
 }

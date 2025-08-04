@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
+using System.Text;
 
 namespace HealthState.Aplicacion.Clientes
 {
@@ -66,6 +67,30 @@ namespace HealthState.Aplicacion.Clientes
                 result = JsonConvert.DeserializeObject<AffiliateModel>(responseContent);
             }
             catch (Exception ex)
+            {
+                _logger.LogError(ex, "Hubo un error al intentar obtener token del API");
+                throw;
+            }
+
+            return result;
+        }
+    
+        public async Task<AuthorizationResponseModel> MakeAuthorization(AuthorizationRequestModel request, string token, CancellationToken cancellationToken = default)
+        {
+            AuthorizationResponseModel result = new();
+            try
+            {
+                var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                var response = await _httpClient.PostAsync("/api/v1/hospitales/integracion/make-authorization", content, cancellationToken);
+                response.EnsureSuccessStatusCode();
+                _logger.LogInformation("Se realizó la autorización satisfactoriamente");
+
+                var responseContent = await response.Content.ReadAsStringAsync();
+                result = JsonConvert.DeserializeObject<AuthorizationResponseModel>(responseContent);
+            }
+            catch(Exception ex)
             {
                 _logger.LogError(ex, "Hubo un error al intentar obtener token del API");
                 throw;

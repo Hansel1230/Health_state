@@ -49,7 +49,6 @@
 
   <ItemGroup>
     <Folder Include="Common\Resources\" />
-    <Folder Include="IntegracionARS\Commands\" />
   </ItemGroup>
 
   <ItemGroup>

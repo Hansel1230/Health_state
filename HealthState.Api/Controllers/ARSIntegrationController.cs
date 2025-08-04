@@ -1,4 +1,5 @@
-﻿using HealthState.Aplicacion.IntegracionARS.Queries.GetByIdSolicitud;
+﻿using HealthState.Aplicacion.IntegracionARS.Commands.MakeAuthorization;
+using HealthState.Aplicacion.IntegracionARS.Queries.GetByIdSolicitud;
 using HealthState.Aplicacion.IntegracionARS.Queries.ValidateAffiliate;
 using HealthState.Controllers;
 using Microsoft.AspNetCore.Authorization;
@@ -32,6 +33,21 @@ namespace HealthState.Api.Controllers
             try
             {
                 var response = await Mediator.Send(query);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+
+        }
+
+        [HttpPost("hacer-solicitud")]
+        public async Task<IActionResult> MakeAuthorization([FromBody] MakeAuthotizationCommand command)
+        {
+            try
+            {
+                var response = await Mediator.Send(command);
                 return Ok(response);
             }
             catch (Exception ex)
