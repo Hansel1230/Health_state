@@ -1,4 +1,6 @@
 ﻿using HealthState.Aplicacion.Clientes.Models;
+using HealthState.Aplicacion.Common.Exceptions;
+using HealthState.Aplicacion.Common.Resources;
 using HealthState.Aplicacion.Interfaces.Servicios;
 using MediatR;
 using System.ComponentModel.DataAnnotations;
@@ -39,6 +41,9 @@ namespace HealthState.Aplicacion.IntegracionARS.Queries.ValidateAffiliate
                 var entity = await _avalancheService.ValidateAffiliateAsync(request);
 
                 result.AffiliateModel = entity;
+
+                if(entity.Exists == false)
+                    NotFoundException.Instance(string.Format(MessageResource.EntityNotExist));
 
                 return result;
             }
