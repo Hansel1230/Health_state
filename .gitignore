@@ -105,3 +105,4 @@ logs/
 
 ## Upgrade Report files (generated when upgrading project versions)
 _UpgradeReport_Files/
+.env

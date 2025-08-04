@@ -21,6 +21,9 @@ namespace HealthState
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+            // Cargar variables de entorno
+            DotNetEnv.Env.Load();
+
             services.AddHttpClient();
 
             services.AddApplication(Configuration);

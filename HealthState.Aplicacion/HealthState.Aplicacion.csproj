@@ -7,11 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Auth\Resources\AuthResource.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Auth\Resources\AuthResource.cs">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AuthResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
     <PackageReference Include="MediatR" Version="12.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="8.0.18" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.6" />
+	<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+	<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+	<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +38,7 @@
     <Compile Update="Auth\Resources\AuthResource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>AuthResource.resx</DependentUpon>
+      <DependentUpon>AuthResource.cs</DependentUpon>
     </Compile>
     <Compile Update="Common\Resources\MessageResource.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -32,10 +48,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Auth\Resources\AuthResource.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>AuthResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <Folder Include="Common\Resources\" />
+    <Folder Include="IntegracionARS\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Common\Resources\MessageResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MessageResource.Designer.cs</LastGenOutput>
