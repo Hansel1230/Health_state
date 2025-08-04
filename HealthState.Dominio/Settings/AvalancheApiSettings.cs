@@ -6,5 +6,6 @@
         public string Password { get; set; }
         public string AuthBaseUrl { get; set; }
         public string BaseUrl { get; set; }
+        public bool Authentication { get; set; }
     }
 }

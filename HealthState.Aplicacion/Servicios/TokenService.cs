@@ -24,17 +24,25 @@ namespace HealthState.Aplicacion.Servicios
             if (!string.IsNullOrEmpty(_token) && DateTime.UtcNow < _expiresAt)
                 return _token;
 
-            LoginRequestModel dto = new()
+            if (_apiSettings.Authentication)
             {
-                UserName = _apiSettings.UserName,
-                Password = _apiSettings.Password
-            };
+                LoginRequestModel dto = new()
+                {
+                    UserName = _apiSettings.UserName,
+                    Password = _apiSettings.Password
+                };
 
-            // Aquí pones tus credenciales reales o las obtienes de la configuración
-            var result = await _avalancheApi.LoginAsync(dto, cancellationToken);
+                // Aquí pones tus credenciales reales o las obtienes de la configuración
+                var result = await _avalancheApi.LoginAsync(dto, cancellationToken);
 
-            _token = result.JwToken;
-            _expiresAt = result.ExpiresAt;
+                _token = result.JwToken;
+                _expiresAt = result.ExpiresAt;
+            }
+            else
+            {
+                _token = "token";
+                _expiresAt = DateTime.Now.AddDays(1);
+            }
 
             return _token;
         }

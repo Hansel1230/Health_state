@@ -38,6 +38,7 @@ namespace HealthState.Aplicacion
                 options.Password = avalancheApiSettings.Password;
                 options.AuthBaseUrl = avalancheApiSettings.AuthBaseUrl;
                 options.BaseUrl = avalancheApiSettings.BaseUrl;
+                options.Authentication = avalancheApiSettings.Authentication;
             });
             #endregion
 
