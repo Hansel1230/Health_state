@@ -2,6 +2,7 @@
 using HealthState.Aplicacion.IntegracionARS.Queries.GetByIdSolicitud;
 using HealthState.Aplicacion.Interfaces.Clientes;
 using HealthState.Aplicacion.Interfaces.Servicios;
+using HealthState.Aplicacion.IntegracionARS.Model;
 
 namespace HealthState.Aplicacion.Servicios
 {
@@ -65,6 +66,24 @@ namespace HealthState.Aplicacion.Servicios
             }
 
             return result;
+        }
+
+        public async Task<PayBillResponseDTO> PayBillsAsync(PayBillRequestModel request, CancellationToken cancellationToken = default)
+        {
+            // Aquí deberías llamar al API externo real, pero puedes simular la respuesta:
+            return new PayBillResponseDTO
+            {
+                TransferenceId = "20250805020210321",
+                TotalAmount = request.Bills.Sum(b => (double)b.Amount),
+                PaidAmount = 0,
+                RefusedAmount = request.Bills.Sum(b => (double)b.Amount),
+                Bills = request.Bills.Select(b => new BillDTO
+                {
+                    AuthorizationNumber = b.AuthorizationNumber.ToString(),
+                    Status = "Rechazada",
+                    Details = "La solicitud no fue encontrada en nuestro sistema"
+                }).ToList()
+            };
         }
     }
 }

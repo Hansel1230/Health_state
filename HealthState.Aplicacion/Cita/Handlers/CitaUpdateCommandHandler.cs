@@ -19,10 +19,6 @@ namespace HealthState.Aplicacion.Cita.Handlers
             if (entityCita == null)
                 throw NotFoundException.Instance(string.Format(MessageResource.EntityToUpdateOrDeleteNotExist));
 
-            if (await repositoryCita.ExistAsync(x => x.MotivoConsulta == request.MotivoConsulta
-            && x.Medico.Cedula == request.MedicoCedula && x.Paciente.Cedula == request.PacienteCedula && x.CitaId != request.CitaId))
-                throw BusinessException.Instance(string.Format(MessageResource.ValueAlreadyRegistered, request.MotivoConsulta));
-
             var repositoryPaciente = unitOfWork.GetRepository<HealthState.Dominio.Paciente>();
 
             if (!await repositoryPaciente.ExistAsync(x => x.Cedula == request.PacienteCedula))

@@ -11,7 +11,7 @@ namespace HealthState.Api.Controllers
 {
     [Route("api/ars")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ARSIntegrationController : ApiController
     {
         [HttpGet("solicitud/{id}")]
@@ -64,12 +64,10 @@ namespace HealthState.Api.Controllers
         {
             try
             {
-                // Aquí deberías inyectar y usar tu servicio que llama al API externo
-                // Por ejemplo, IAvalancheService.PayBillsAsync(...)
                 var response = await Mediator.Send(new PayBillsCommand(request));
                 return Ok(response);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
