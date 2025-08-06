@@ -1,6 +1,7 @@
 ﻿using HealthState.Aplicacion.Clientes.Models;
 using HealthState.Aplicacion.IntegracionARS.Queries.GetByIdSolicitud;
 using HealthState.Aplicacion.Interfaces.Clientes;
+using HealthState.Aplicacion.IntegracionARS.Model;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -93,6 +94,30 @@ namespace HealthState.Aplicacion.Clientes
             catch(Exception ex)
             {
                 _logger.LogError(ex, "Hubo un error al intentar obtener token del API");
+                throw;
+            }
+
+            return result;
+        }
+
+        public async Task<PayBillResponseDTO> PayBillsAsync(PayBillRequestModel request, string token, CancellationToken cancellationToken = default)
+        {
+            PayBillResponseDTO result = new();
+            try
+            {
+                var content = new StringContent(JsonConvert.SerializeObject(request), Encoding.UTF8, "application/json");
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                var response = await _httpClient.PostAsync("/api/v1/hospitales/integracion/pay-bills", content, cancellationToken);
+                response.EnsureSuccessStatusCode();
+                _logger.LogInformation("Se realizó el pago de facturas satisfactoriamente");
+
+                var responseContent = await response.Content.ReadAsStringAsync();
+                result = JsonConvert.DeserializeObject<PayBillResponseDTO>(responseContent);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Hubo un error al intentar pagar facturas en el API");
                 throw;
             }
 
