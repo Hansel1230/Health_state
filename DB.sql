@@ -95,7 +95,7 @@ CREATE TABLE [dbo].[Medicos](
 	[Especialidad] [nvarchar](100) NULL,
 	[Telefono] [nvarchar](20) NULL,
 	[Email] [nvarchar](100) NULL,
-	[Cedula] [varchar](11) NULL,
+	[Cedula] [varchar](13) NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[MedicoID] ASC
@@ -117,7 +117,7 @@ CREATE TABLE [dbo].[Pacientes](
 	[Email] [nvarchar](100) NULL,
 	[PolizaID] [int] NULL,
 	[AseguradoraID] [int] NULL,
-	[Cedula] [varchar](11) NULL,
+	[Cedula] [varchar](13) NULL,
 	[Apellido] [varchar](100) NOT NULL,
 PRIMARY KEY CLUSTERED 
 (
